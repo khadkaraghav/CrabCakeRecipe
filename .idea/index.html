@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <h1> Please select your burrito</h1>
+
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito1()">
+    Burrito 1
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito2()">
+    Burrito 2
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito3()">
+    Burrito 3
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito4()">
+    Burrito 4
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito5()">
+    Burrito 5
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito6()">
+    Burrito 6
+</button></br><br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito()">
+    Burrito 7
+</button></br>
+    <br><button type="button" onclick="document.getElementById('demo').innerHTML = burrito7()">
+    Burrito 8
+</button></br>
+
+
+
+
+    <p id="demo"></p>
+
+ <script language="JavaScript">
+
+        function burrito1() {
+            var riceSelect = ['white rice', 'brown rice', 'no rice'];
+            var meatSelect = ['chicken', 'steak', 'veggies'];
+            var beanSelect = ['black beans', 'brown beans', 'no beans'];
+            var salsaSelect = ['mild salsa', 'hot', 'no salsa'];
+
+            var randomIndexRice = Math.floor(Math.random(0) * riceSelect.length);
+            var rice = riceSelect[randomIndexRice];
+
+            var randomIndexMeat = Math.floor(Math.random(0) * meatSelect.length);
+            var meat = meatSelect[randomIndexMeat];
+
+            var randomIndexBeans = Math.floor(Math.random(0) * beanSelect.length);
+            var beans = beanSelect[randomIndexBeans];
+
+            var randomIndexSalsa = Math.floor(Math.random(0) * salsaSelect.length);
+            var salsa = salsaSelect[randomIndexSalsa];
+
+
+
+            riceSelect.push(rice);
+            meatSelect.push(meat);
+            beanSelect.push(beans);
+            salsaSelect.push(salsa);
+
+            var total=3;
+
+
+            document.write(rice +" , " +meat +" , " +beans +" , " +salsa+ " ----> "+ "$"+total);
+
+        }
+
+        function burrito2() {
+
+            burrito1()
+
+        }
+
+        function burrito3() {
+
+            burrito1()
+
+        }
+
+        function burrito4() {
+            burrito1()
+        }
+
+            function burrito5() {
+                burrito1()
+            }
+
+                function burrito6() {
+                    burrito1()
+                }
+
+                    function burrito7() {
+                        burrito1()
+                    }
+
+                        function burrito8() {
+                            burrito1()
+
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
